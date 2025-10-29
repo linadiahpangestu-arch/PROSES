@@ -93,6 +93,19 @@ button:hover { background: #4b86b4; }
 </div>
 
 <script>
+ function startTest() {
+  const name = document.getElementById("studentName").value.trim();
+  const kelas = document.getElementById("studentClass").value.trim();
+  
+ // Validasi input
+  if (!name || !kelas) {
+    alert("Harap isi nama dan kelas terlebih dahulu!");
+    return;
+  }
+  // Sembunyikan bagian intro, tampilkan quiz
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("quizSection").classList.remove("hidden");
+  
 // ==========================
 // TIMER & DATA SOAL
 // ==========================
