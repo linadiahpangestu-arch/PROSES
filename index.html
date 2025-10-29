@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
@@ -93,19 +93,6 @@ button:hover { background: #4b86b4; }
 </div>
 
 <script>
- function startTest() {
-  const name = document.getElementById("studentName").value.trim();
-  const kelas = document.getElementById("studentClass").value.trim();
-  
- // Validasi input
-  if (!name || !kelas) {
-    alert("Harap isi nama dan kelas terlebih dahulu!");
-    return;
-  }
-  // Sembunyikan bagian intro, tampilkan quiz
-  document.getElementById("intro").classList.add("hidden");
-  document.getElementById("quizSection").classList.remove("hidden");
-  
 // ==========================
 // TIMER & DATA SOAL
 // ==========================
@@ -741,11 +728,11 @@ fb_false:`❌ Salah — perhatikan bahwa data Nina (3x + z = 12.000) penting unt
   type:"mcq",
   q:"Seorang penjahit membutuhkan 2 meter kain A, 1 meter kain B, dan 3 meter kain C yang dibeli seharga Rp 106.000,- untuk membuat gorden model pertama. Sementara untuk membuat gaun dibutuhkan 2 meter kain A dan 2 meter kain B dengan harga Rp 64.000,-. Untuk model ketiga dibutuhkan 3 meter kain A dan 2 meter kain B dengan harga Rp 90.000,-. Harga per meter (A;B;C) adalah ...",
   options:[
-    "Rp 15.000,-;Rp 15.000,-;Rp 17.000,-",
-    "Rp 20.000,-;Rp 17.000,-;Rp 17.000,-",
-    "Rp 20.000,-;Rp 17.000,-;Rp 15.000,-",
-    "Rp 15.000,-;Rp 20.000,-;Rp 17.000,-",
-    "Rp 20.000,-;Rp 15.000,-;Rp 17.000,-"
+    "Rp 15.000,-; Rp 15.000,-; Rp 17.000,-",
+    "Rp 20.000,-; Rp 17.000,-; Rp 17.000,-",
+    "Rp 20.000,-; Rp 17.000,-; Rp 15.000,-",
+    "Rp 15.000,-; Rp 20.000,-; Rp 17.000,-",
+    "Rp 20.000,-; Rp 15.000,-; Rp 17.000,-"
   ],
   answer:4,
   cat:"Modeling",
